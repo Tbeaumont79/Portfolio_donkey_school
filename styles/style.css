@@ -97,3 +97,8 @@ nav > ul > li > a {
 	font-family: "roboto", sans-serif;
 	font-size: 1rem;
 }
+
+body {
+	background-color: var(--lightGray);
+	
+}
