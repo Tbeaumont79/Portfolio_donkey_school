@@ -2,7 +2,7 @@
 	--softblue: #49769e;
 	--darkerblue: #294054;
 	--darkGray: #333333;
-	--lightGray: ##f2f2f2;
+	--lightGray: #f2f2f2;
 }
 @font-face {
 	font-family: "poppins";
@@ -11,5 +11,89 @@
 
 @font-face {
 	font-family: "roboto";
-	src: "../assets/fonts/Roboto/Roboto-Regular.ttf";
+	src: url("../assets/fonts/Roboto/static/Roboto-Regular.ttf");
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+header {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+}
+.header-text {
+	padding: 40px;
+	width: 100%;
+	background: linear-gradient(to right, var(--softblue) 10%, var(--darkerblue));
+}
+
+.header-text > h1 {
+	color: #ffffff;
+	font-size: 2.5rem;
+	font-weight: bold;
+	font-family: "poppins";
+	text-align: center;
+}
+
+.header-text > h2 {
+	color: #ffffff;
+	font-size: 1.25rem;
+	padding-top: 12px;
+	text-align: center;
+	font-family: "poppins", sans-serif;
+	font-weight: 600;
+}
+
+.mobile-menu {
+	width: 100%;
+	background-color: var(--darkGray);
+}
+.mobile-menu > label > img {
+	padding: 20px;
+}
+
+.mobile-menu > label > input {
+	display: none;
+}
+
+.mobile-menu:not(:has(input:checked)) + nav {
+	display: none;
+}
+.mobile-menu:has(input:checked) + nav {
+	display: block;
+}
+
+nav {
+	width: 100%;
+	background-color: var(--darkGray);
+	padding-top: 15px;
+}
+
+nav > ul {
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 1.5rem;
+}
+nav > ul > li {
+	width: 100%;
+	text-align: center;
+	border-bottom: 2px solid #3b3b3b;
+	padding-bottom: 30px;
+}
+nav > ul > li:last-child {
+	border-bottom: none;
+}
+nav > ul > li > a {
+	color: #fff;
+	text-decoration: none;
+	font-family: "roboto", sans-serif;
+	font-size: 1rem;
 }
