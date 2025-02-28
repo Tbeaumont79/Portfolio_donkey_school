@@ -49,22 +49,22 @@ header {
 	font-weight: 600;
 }
 
-.mobile-menu {
+.mobile-menu-toggle {
 	width: 100%;
 	background-color: var(--darkGray);
 }
-.mobile-menu > label > img {
+.mobile-menu-toggle > label > img {
 	padding: 20px;
 }
 
-.mobile-menu > label > input {
+.mobile-menu-toggle > label > input {
 	display: none;
 }
 
-.mobile-menu:not(:has(input:checked)) + nav {
+.mobile-menu-toggle:not(:has(input:checked)) + nav {
 	display: none;
 }
-.mobile-menu:has(input:checked) + nav {
+.mobile-menu-toggle:has(input:checked) + nav {
 	display: block;
 }
 
