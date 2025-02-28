@@ -4,3 +4,12 @@
 	--darkGray: #333333;
 	--lightGray: ##f2f2f2;
 }
+@font-face {
+	font-family: "poppins";
+	src: url("../assets/fonts/Poppins/Poppins-Regular.ttf");
+}
+
+@font-face {
+	font-family: "roboto";
+	src: "../assets/fonts/Roboto/Roboto-Regular.ttf";
+}
