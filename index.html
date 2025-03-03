@@ -4,96 +4,100 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Portfolio</title>
+		<!-- base.css contains variables (for all neccessary colors) and fonts (roboto and poppins) -->
+		<link rel="stylesheet" href="styles/base.css" />
+		<!-- style.css contains all the styles of the page -->
 		<link rel="stylesheet" href="styles/style.css" />
 	</head>
 	<body>
+		<header>
+			<div class="header-text">
+				<h1>Jean Dupont</h1>
+				<h2>Développeur Web & Mobile</h2>
+			</div>
+			<div class="mobile-menu-toggle">
+				<label for="menu">
+					<input type="checkbox" name="menu" id="menu" />
+					<img src="assets/icons/hamburger_menu_icon.svg" alt="menu" />
+				</label>
+			</div>
+			<nav>
+				<ul>
+					<li><a href="#profile">Profil</a></li>
+					<li><a href="#experience">Expérience</a></li>
+					<li><a href="#formation">Formation</a></li>
+					<li><a href="#competence">Compétences</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+			</nav>
+		</header>
 		<main>
-			<header>
-				<div class="header-text">
-					<h1>Jean Dupont</h1>
-					<h2>Développeur Web & Mobile</h2>
+			<section id="profile">
+				<h2>Profil</h2>
+				<img
+					src="assets/images/thibault.webp"
+					alt="A picture of a man with glasses, in front of a orange brick wall"
+				/>
+				<p>
+					Développeur passionné avec plus de 5 ans d'expérience dans la création
+					d'applications web et mobiles. Spécialisé dans le développement
+					front-end et back-end, j'apporte des solutions innovantes et adaptées
+					aux besoins des entreprises.
+				</p>
+			</section>
+			<section id="experience">
+				<h2>Expériences professionnelles</h2>
+				<div class="card-content">
+					<h3>Développeur Full Stack - TechCorp</h3>
+					<p>Janvier 2020 - Présent</p>
+					<p>
+						Conception, développement et maintenance d'applications web et
+						mobiles en utilisant React, Node.js et Flutter. Collaboration avec
+						les équipes design et marketing pour optimiser l'expérience
+						utilisateur.
+					</p>
 				</div>
-				<div class="mobile-menu-toggle">
-					<label for="menu">
-						<input type="checkbox" name="menu" id="menu" />
-						<img src="assets/icons/hamburger_menu_icon.svg" alt="menu" />
-					</label>
+				<div class="card-content">
+					<h3>Développeur Web - WebSolutions</h3>
+					<p>Juin 2017 - Décembre 2019</p>
+					<p>
+						Création de sites web responsives et d'applications dynamiques. Mise
+						en place d'architectures sécurisées et évolutives, avec une
+						attention particulière à l'accessibilité.
+					</p>
 				</div>
-				<nav>
-					<ul>
-						<li><a href="#profile">Profil</a></li>
-						<li><a href="#experience">Expérience</a></li>
-						<li><a href="#formation">Formation</a></li>
-						<li><a href="#competence">Compétences</a></li>
-						<li><a href="#contact">Contact</a></li>
-					</ul>
-				</nav>
-			</header>
+			</section>
+			<section id="formation">
+				<h2>Formation</h2>
+				<div class="card-content">
+					<h3>Master en Informatique</h3>
+					<p>Université de Technologie - 2015 - 2017</p>
+					<p>
+						Spécialisation en développement logiciel et systèmes d'information
+						avec une approche orientée projets.
+					</p>
+				</div>
+				<div class="card-content">
+					<h3>Licence en Informatique</h3>
+					<p>Université Nationale - 2012 - 2015</p>
+					<p>
+						Acquisition des fondamentaux de la programmation, des bases de
+						données et du développement web.
+					</p>
+				</div>
+			</section>
+			<section id="competence">
+				<h2>Compétences</h2>
+				<div class="competence-content">
+					<p>HTML5, CSS3, JavaScript (ES6+)</p>
+					<p>Frameworks: React, Angular, Vue.js</p>
+					<p>Back-end: Node.js, Express, PHP</p>
+					<p>Mobile: Flutter, React Native</p>
+					<p>Base de données: MySQL, MongoDB</p>
+					<p>Outils: Git, Docker, Jenkins</p>
+					<p>Design Ul/UX</p>
+				</div>
+			</section>
 		</main>
-		<section id="profile">
-			<h2>Profil</h2>
-			<img
-				src="assets/images/thibault.webp"
-				alt="A picture of a man with glasses, in front of a orange brick wall"
-			/>
-			<p>
-				Développeur passionné avec plus de 5 ans d'expérience dans la création
-				d'applications web et mobiles. Spécialisé dans le développement
-				front-end et back-end, j'apporte des solutions innovantes et adaptées
-				aux besoins des entreprises.
-			</p>
-		</section>
-		<section id="experience">
-			<h2>Expériences professionnelles</h2>
-			<div class="card-content">
-				<h3>Développeur Full Stack - TechCorp</h3>
-				<p>Janvier 2020 - Présent</p>
-				<p>
-					Conception, développement et maintenance d'applications web et mobiles
-					en utilisant React, Node.js et Flutter. Collaboration avec les équipes
-					design et marketing pour optimiser l'expérience utilisateur.
-				</p>
-			</div>
-			<div class="card-content">
-				<h3>Développeur Web - WebSolutions</h3>
-				<p>Juin 2017 - Décembre 2019</p>
-				<p>
-					Création de sites web responsives et d'applications dynamiques. Mise
-					en place d'architectures sécurisées et évolutives, avec une attention
-					particulière à l'accessibilité.
-				</p>
-			</div>
-		</section>
-		<section id="formation">
-			<h2>Formation</h2>
-			<div class="card-content">
-				<h3>Master en Informatique</h3>
-				<p>Université de Technologie - 2015 - 2017</p>
-				<p>
-					Spécialisation en développement logiciel et systèmes d'information
-					avec une approche orientée projets.
-				</p>
-			</div>
-			<div class="card-content">
-				<h3>Licence en Informatique</h3>
-				<p>Université Nationale - 2012 - 2015</p>
-				<p>
-					Acquisition des fondamentaux de la programmation, des bases de données
-					et du développement web.
-				</p>
-			</div>
-		</section>
-		<section id="competence">
-			<h2>Compétences</h2>
-			<div class="competence-content">
-				<p>HTML5, CSS3, JavaScript (ES6+)</p>
-				<p>Frameworks: React, Angular, Vue.js</p>
-				<p>Back-end: Node.js, Express, PHP</p>
-				<p>Mobile: Flutter, React Native</p>
-				<p>Base de données: MySQL, MongoDB</p>
-				<p>Outils: Git, Docker, Jenkins</p>
-				<p>Design Ul/UX</p>
-			</div>
-		</section>
 	</body>
 </html>
