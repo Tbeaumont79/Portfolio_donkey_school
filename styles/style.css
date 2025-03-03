@@ -28,6 +28,8 @@ header {
 }
 
 .mobile-menu-toggle {
+	position: sticky;
+	top: -5px;
 	width: 100%;
 	background-color: var(--darkGray);
 }
@@ -42,6 +44,7 @@ header {
 .mobile-menu-toggle:not(:has(input:checked)) + nav {
 	display: none;
 }
+
 .mobile-menu-toggle:has(input:checked) + nav {
 	display: block;
 }
@@ -61,7 +64,7 @@ nav > ul {
 	gap: 1.5rem;
 }
 nav > ul > li {
-	width: 100%;
+	width: 90%;
 	text-align: center;
 	border-bottom: 2px solid #3b3b3b;
 	padding-bottom: 30px;
@@ -131,7 +134,6 @@ section > h2 {
 	font-weight: 500;
 	font-size: var(--text-lg);
 }
-
 .card-content > p {
 	padding-top: 0.5rem;
 	font-family: "roboto", sans-serif;
@@ -154,4 +156,31 @@ section > h2 {
 	padding: 0.5rem;
 	background-color: #fff;
 	border-radius: 15px;
+}
+
+.contact-links {
+	padding-top: 1rem;
+	display: flex;
+	justify-content: center;
+	gap: 1rem;
+}
+.contact-links > a {
+	color: var(--softblue);
+	border: 1px solid var(--softblue);
+	padding: 0.5rem;
+	font-family: "roboto", sans-serif;
+	font-weight: 500;
+	font-size: var(--text-md);
+	text-decoration: none;
+}
+footer {
+	background-color: var(--darkGray);
+	padding: 1rem;
+}
+footer > p {
+	text-align: center;
+	font-family: "roboto", sans-serif;
+	font-weight: 300;
+	font-size: var(--text-xs);
+	color: #fff;
 }
