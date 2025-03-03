@@ -184,3 +184,32 @@ footer > p {
 	font-size: var(--text-xs);
 	color: #fff;
 }
+
+@media screen and (min-width: 1024px) {
+	.mobile-menu-toggle {
+		display: none;
+	}
+	.mobile-menu-toggle:not(:has(input:checked)) + nav {
+		display: block;
+	}
+	nav {
+		height: 50px;
+	}
+	nav > ul {
+		list-style: none;
+		display: flex;
+		flex-direction: row;
+		width: 40%;
+	}
+	nav > ul > li {
+		border-bottom: none;
+		padding-left: 1rem;
+	}
+
+	nav > ul > li > a {
+		font-size: var(--text-md);
+	}
+	nav > ul > li > a:hover {
+		color: var(--softblue);
+	}
+}
