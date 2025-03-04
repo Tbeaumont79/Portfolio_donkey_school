@@ -11,7 +11,7 @@
 	</head>
 	<body>
 		<header>
-			<div class="header-text">
+			<div class="header-text" role="banner">
 				<h1>Jean Dupont</h1>
 				<h2>Développeur Web & Mobile</h2>
 			</div>
@@ -21,7 +21,7 @@
 					<img src="assets/icons/hamburger_menu_icon.svg" alt="menu" />
 				</label>
 			</div>
-			<nav>
+			<nav role="navigation" aria-label="Navigation principale">
 				<ul>
 					<li><a href="#profile">Profil</a></li>
 					<li><a href="#experience">Expérience</a></li>
@@ -31,7 +31,7 @@
 				</ul>
 			</nav>
 		</header>
-		<main>
+		<aside>
 			<section id="profile">
 				<h2>Profil</h2>
 				<img
@@ -45,9 +45,11 @@
 					aux besoins des entreprises.
 				</p>
 			</section>
-			<section class="card" id="experience">
+		</aside>
+		<main id="main-content" role="main">
+			<article class="card" id="experience">
 				<h2>Expériences professionnelles</h2>
-				<div class="card-content">
+				<section class="card-content">
 					<h3>Développeur Full Stack - TechCorp</h3>
 					<p>Janvier 2020 - Présent</p>
 					<p>
@@ -56,8 +58,8 @@
 						les équipes design et marketing pour optimiser l'expérience
 						utilisateur.
 					</p>
-				</div>
-				<div class="card-content">
+				</section>
+				<section class="card-content">
 					<h3>Développeur Web - WebSolutions</h3>
 					<p>Juin 2017 - Décembre 2019</p>
 					<p>
@@ -65,30 +67,30 @@
 						en place d'architectures sécurisées et évolutives, avec une
 						attention particulière à l'accessibilité.
 					</p>
-				</div>
-			</section>
-			<section class="card" id="formation">
+				</section>
+			</article>
+			<article class="card" id="formation">
 				<h2>Formation</h2>
-				<div class="card-content">
+				<section class="card-content">
 					<h3>Master en Informatique</h3>
 					<p>Université de Technologie - 2015 - 2017</p>
 					<p>
 						Spécialisation en développement logiciel et systèmes d'information
 						avec une approche orientée projets.
 					</p>
-				</div>
-				<div class="card-content">
+				</section>
+				<section class="card-content">
 					<h3>Licence en Informatique</h3>
 					<p>Université Nationale - 2012 - 2015</p>
 					<p>
 						Acquisition des fondamentaux de la programmation, des bases de
 						données et du développement web.
 					</p>
-				</div>
-			</section>
-			<section id="competence">
+				</section>
+			</article>
+			<article id="competence">
 				<h2>Compétences</h2>
-				<div class="competence-content">
+				<section class="competence-content">
 					<p>HTML5, CSS3, JavaScript (ES6+)</p>
 					<p>Frameworks: React, Angular, Vue.js</p>
 					<p>Back-end: Node.js, Express, PHP</p>
@@ -96,36 +98,36 @@
 					<p>Base de données: MySQL, MongoDB</p>
 					<p>Outils: Git, Docker, Jenkins</p>
 					<p>Design Ul/UX</p>
+				</section>
+			</article>
+		</main>
+		<aside role="complementary">
+			<section id="contact">
+				<h2>Contact</h2>
+				<div class="card-content">
+					<p>
+						Email:
+						<a href="mailto:thibault.schmitt@pm.me">thibault.schmitt@pm.me</a>
+					</p>
+					<p>Tel: +33 6 12 43 23 14</p>
+					<p>Adresse: 1 rue de la paix, 75000 Paris</p>
+					<div class="contact-links">
+						<a
+							href="https://www.linkedin.com/in/thibault-schmitt/"
+							target="_blank"
+							>LinkedIn</a
+						>
+						<a href="https://github.com/ThibaultSchmitt " target="_blank"
+							>Github</a
+						>
+						<a href="https://twitter.com/ThibaultSchmitt" target="_blank"
+							>Twitter</a
+						>
+					</div>
 				</div>
 			</section>
-			<aside>
-				<section id="contact">
-					<h2>Contact</h2>
-					<div class="card-content">
-						<p>
-							Email:
-							<a href="mailto:thibault.schmitt@pm.me">thibault.schmitt@pm.me</a>
-						</p>
-						<p>Tel: +33 6 12 43 23 14</p>
-						<p>Adresse: 1 rue de la paix, 75000 Paris</p>
-						<div class="contact-links">
-							<a
-								href="https://www.linkedin.com/in/thibault-schmitt/"
-								target="_blank"
-								>LinkedIn</a
-							>
-							<a href="https://github.com/ThibaultSchmitt " target="_blank"
-								>Github</a
-							>
-							<a href="https://twitter.com/ThibaultSchmitt" target="_blank"
-								>Twitter</a
-							>
-						</div>
-					</div>
-				</section>
-			</aside>
-		</main>
-		<footer>
+		</aside>
+		<footer role="contentinfo">
 			<p>© 2025 Jean Dupont - Tous droits réservés</p>
 		</footer>
 	</body>

@@ -80,22 +80,26 @@ nav > ul > li > a {
 }
 
 body {
-	background-color: var(--lightGray);
-}
-
-main {
-	padding: 1.5rem;
-	margin-top: 1.5rem;
 	background-color: #fff;
 }
-section {
+
+main,
+aside {
+	padding: 1.5rem;
+}
+
+aside > section {
+	background-color: var(--lightGray);
+	padding: 1rem;
+}
+article {
 	background-color: var(--lightGray);
 	padding: 1rem;
 	margin-top: 1rem;
-	width: 100%;
 }
 
-section > h2 {
+article > h2,
+aside > section h2 {
 	border-bottom: 2px solid var(--softblue);
 	font-family: "poppins", sans-serif;
 	font-weight: 500;
