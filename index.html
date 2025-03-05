@@ -15,13 +15,22 @@
 				<h1>Jean Dupont</h1>
 				<h2>Développeur Web & Mobile</h2>
 			</div>
-			<div class="mobile-menu-toggle">
-				<label for="menu">
-					<input type="checkbox" name="menu" id="menu" />
-					<img src="assets/icons/hamburger_menu_icon.svg" alt="menu" />
-				</label>
+			<div id="mobile-menu-bar">
+				<button
+					id="mobile-menu-button"
+					aria-expanded="false"
+					aria-controls="main-nav"
+				>
+					<img
+						src="assets/icons/hamburger_menu_icon.svg"
+						alt="A hamburger menu icon"
+						width="30px"
+						height="30px"
+					/>
+					<span class="sr-only">Ouvrir ou fermer le menu </span>
+				</button>
 			</div>
-			<nav role="navigation" aria-label="Navigation principale">
+			<nav id="main-nav" role="navigation" aria-label="Navigation principale">
 				<ul>
 					<li><a href="#profile">Profil</a></li>
 					<li><a href="#experience">Expérience</a></li>
@@ -118,13 +127,23 @@
 						<div class="contact-links">
 							<a
 								href="https://www.linkedin.com/in/thibault-schmitt/"
+								rel="noopener noreferrer"
+								aria-label="LinkedIn (s'ouvre dans une nouvelle fenêtre)"
 								target="_blank"
 								>LinkedIn</a
 							>
-							<a href="https://github.com/ThibaultSchmitt " target="_blank"
+							<a
+								href="https://github.com/ThibaultSchmitt "
+								rel="noopener noreferrer"
+								aria-label="Github (s'ouvre dans une nouvelle fenêtre)"
+								target="_blank"
 								>Github</a
 							>
-							<a href="https://twitter.com/ThibaultSchmitt" target="_blank"
+							<a
+								href="https://twitter.com/ThibaultSchmitt"
+								rel="noopener noreferrer"
+								aria-label="Twitter (s'ouvre dans une nouvelle fenêtre)"
+								target="_blank"
 								>Twitter</a
 							>
 						</div>
@@ -136,5 +155,6 @@
 		<footer role="contentinfo">
 			<p>© 2025 Jean Dupont - Tous droits réservés</p>
 		</footer>
+		<script src="scripts/script.js"></script>
 	</body>
 </html>

@@ -29,34 +29,39 @@ header {
 	font-weight: 300;
 }
 
-.mobile-menu-toggle {
-	display: block;
+#mobile-menu-bar {
 	position: fixed;
 	top: 0;
+	left: 0;
 	width: 100%;
 	background-color: var(--darkGray);
 }
-.mobile-menu-toggle > label > img {
-	padding: 20px;
+#mobile-menu-button {
+	background-color: var(--darkGray);
+	height: 80px;
+	width: 80px;
+	border: none;
 }
-
-.mobile-menu-toggle > label > input {
+.menu-hidden {
 	display: none;
 }
-
-.mobile-menu-toggle:not(:has(input:checked)) + nav {
-	display: none;
+.sr-only {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	white-space: nowrap;
+	border-width: 0;
 }
-.mobile-menu-toggle:has(input:checked) + nav {
-	position: fixed;
-	top: 50px;
-	display: block;
-}
-
 nav {
 	width: 100%;
 	background-color: var(--darkGray);
 	padding-top: 15px;
+	position: fixed;
+	top: 80px;
 }
 
 nav > ul {
@@ -204,28 +209,35 @@ footer > p {
 		padding-top: 0rem;
 		margin-top: 0rem;
 	}
-	.mobile-menu-toggle {
+
+	#mobile-menu-button {
 		display: none;
 	}
-	.mobile-menu-toggle:not(:has(input:checked)) + nav {
-		display: block;
+
+	.menu-hidden {
+		display: block !important;
 	}
 	nav {
 		height: 50px;
+		display: block;
+		position: relative;
+		top: 0px;
 	}
 	nav > ul {
 		list-style: none;
 		display: flex;
+		justify-content: flex-start;
+		gap: 1rem;
 		flex-direction: row;
-		width: 40%;
+		width: 100%;
 	}
 	nav > ul > li {
 		border-bottom: none;
+		max-width: 100px;
 	}
 
 	nav > ul > li > a {
 		font-size: var(--text-md);
-		width: 40px;
 		padding: 1rem;
 	}
 	nav > ul > li > a:hover {
