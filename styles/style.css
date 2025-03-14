@@ -14,7 +14,6 @@
 	font-size: var(--text-xl);
 	z-index: 1;
 }
-
 header {
 	display: flex;
 	justify-content: center;
@@ -28,7 +27,6 @@ header {
 	width: 100%;
 	background: linear-gradient(to right, var(--softblue) 10%, var(--darkerblue));
 }
-
 .header-text > h1 {
 	color: #ffffff;
 	font-size: var(text-2xl);
@@ -36,7 +34,6 @@ header {
 	font-weight: 700;
 	text-align: center;
 }
-
 .header-text > h2 {
 	color: #ffffff;
 	font-size: var(--text-xl);
@@ -45,7 +42,6 @@ header {
 	font-family: "poppins", sans-serif;
 	font-weight: 300;
 }
-
 #mobile-menu-bar {
 	position: fixed;
 	top: 0;
@@ -80,7 +76,6 @@ nav {
 	position: fixed;
 	top: 80px;
 }
-
 nav > ul {
 	list-style: none;
 	display: flex;
@@ -107,16 +102,13 @@ nav > ul > li > a {
 body {
 	background-color: #fff;
 }
-
 main {
 	padding: 1.5rem;
 	background-color: #fff;
 }
-
 aside:not(:first-of-type) {
 	padding-top: 1rem;
 }
-
 aside > section {
 	background-color: var(--lightGray);
 	padding: 1rem;
@@ -126,7 +118,6 @@ section {
 	padding: 1rem;
 	margin-top: 1rem;
 }
-
 section > h2,
 aside > section h2 {
 	border-bottom: 2px solid var(--softblue);
@@ -148,7 +139,6 @@ aside > section h2 {
 	object-fit: cover;
 	object-position: 50% 20%;
 }
-
 .profile-content > p {
 	font-family: "roboto", sans-serif;
 	font-weight: 300;
@@ -161,7 +151,6 @@ aside > section h2 {
 	justify-content: center;
 	gap: 1rem;
 }
-
 .card-content > h3 {
 	font-family: "roboto", sans-serif;
 	font-weight: 500;
@@ -174,13 +163,11 @@ aside > section h2 {
 	line-height: 1.5rem;
 	font-size: var(--text-md);
 }
-
 .competence-content {
 	padding-top: 0.5rem;
 	display: flex;
 	flex-wrap: wrap;
 }
-
 .competence-content > p {
 	font-family: "roboto", sans-serif;
 	font-weight: 300;
@@ -190,7 +177,6 @@ aside > section h2 {
 	background-color: #fff;
 	border-radius: 15px;
 }
-
 .contact-links {
 	padding-top: 1rem;
 	display: flex;
@@ -217,7 +203,6 @@ footer > p {
 	font-size: var(--text-xs);
 	color: #fff;
 }
-
 @media screen and (min-width: 1024px) {
 	body {
 		background-color: var(--lightGray);
@@ -226,11 +211,9 @@ footer > p {
 		padding-top: 0rem;
 		margin-top: 0rem;
 	}
-
 	#mobile-menu-button {
 		display: none;
 	}
-
 	.menu-hidden {
 		display: block !important;
 	}
@@ -252,7 +235,6 @@ footer > p {
 		border-bottom: none;
 		max-width: 100px;
 	}
-
 	nav > ul > li > a {
 		font-size: var(--text-md);
 		padding: 1rem;
@@ -262,7 +244,6 @@ footer > p {
 		font-weight: bold;
 		color: #fff;
 	}
-
 	main {
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
@@ -288,7 +269,6 @@ footer > p {
 		padding-top: 1rem;
 		z-index: 1;
 	}
-
 	.card {
 		display: flex;
 		justify-content: flex-start;
@@ -297,7 +277,6 @@ footer > p {
 	.card-content > p {
 		max-width: 90%;
 	}
-
 	.card-content,
 	aside:first-of-type > section > .profile-content,
 	.competence-content {
@@ -313,7 +292,6 @@ footer > p {
 	section {
 		background-color: #fff;
 	}
-
 	.competence-content > p {
 		background-color: var(--lightGray);
 	}
