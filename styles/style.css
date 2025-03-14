@@ -121,13 +121,13 @@ aside > section {
 	background-color: var(--lightGray);
 	padding: 1rem;
 }
-article {
+section {
 	background-color: var(--lightGray);
 	padding: 1rem;
 	margin-top: 1rem;
 }
 
-article > h2,
+section > h2,
 aside > section h2 {
 	border-bottom: 2px solid var(--softblue);
 	font-family: "poppins", sans-serif;
@@ -310,7 +310,7 @@ footer > p {
 		max-width: 90%;
 		margin: 0 auto;
 	}
-	article {
+	section {
 		background-color: #fff;
 	}
 
